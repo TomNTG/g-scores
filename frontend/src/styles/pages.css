@@ -1,0 +1,273 @@
+.page-heading {
+  margin-bottom: 24px;
+}
+
+.page-heading h2 {
+  font-size: 27px;
+  margin: 0 0 8px;
+}
+
+.page-heading p,
+.panel > p,
+.panel-top p {
+  color: #596477;
+  line-height: 1.6;
+}
+
+.panel {
+  background: #fff;
+  padding: 26px 22px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  border: 1px solid #edf0f4;
+  box-shadow: 0 2px 8px #122a4410;
+}
+
+.panel h2 {
+  margin: 12px 0 16px;
+  font-size: 23px;
+}
+
+.panel h3 {
+  margin-top: 0;
+}
+
+/* Dashboard */
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.metric-card {
+  background: white;
+  border: 1px solid #edf0f4;
+  border-radius: 10px;
+  padding: 22px;
+  display: grid;
+  gap: 12px;
+}
+
+.metric-card span {
+  color: #52627b;
+}
+
+.metric-card strong {
+  font-size: 30px;
+  color: #14277e;
+}
+
+.metric-card small {
+  color: #8490a0;
+}
+
+.action-grid {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.action-grid a {
+  padding: 20px;
+  background: #f5f7fc;
+  border: 1px solid #e2e6ef;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+/* Search Scores */
+form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.search-row {
+  display: flex;
+  gap: 6px;
+  max-width: 620px;
+}
+
+.search-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  border: 1px solid #ccd3df;
+  border-radius: 4px;
+}
+
+.search-row button {
+  background: #101010;
+  color: white;
+  border: 0;
+  border-radius: 4px;
+  min-width: 98px;
+  padding: 12px 18px;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.score-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  border: 1px solid #edf0f4;
+  border-radius: 8px;
+  background: #fafbfc;
+}
+
+.score-item span,
+.helper-text {
+  color: #6e7b8d;
+}
+
+.score-item strong {
+  font-size: 22px;
+}
+
+.helper-text {
+  font-size: 13px;
+  margin-top: 16px;
+}
+
+.alert-error {
+  padding: 12px 14px;
+  border-radius: 7px;
+  background: #fff1f1;
+  color: #9c2323;
+}
+
+/* Statistics */
+.panel-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.panel-top h2 {
+  margin: 0;
+}
+
+.subject-picker {
+  display: grid;
+  gap: 8px;
+  font-size: 13px;
+  min-width: 155px;
+}
+
+.subject-picker select {
+  padding: 10px;
+  border: 1px solid #ccd3df;
+  border-radius: 6px;
+  background: white;
+}
+
+.chart-container {
+  width: 100%;
+  min-height: 310px;
+  margin-top: 20px;
+}
+
+.level-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin-top: 16px;
+}
+
+.level-card {
+  display: grid;
+  gap: 10px;
+  padding: 14px;
+  border-radius: 8px;
+  background: #f6f8fb;
+}
+
+.level-card span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+}
+
+.level-card i {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+}
+
+.level-card strong {
+  font-size: 20px;
+}
+
+/* Ranking */
+.table-scroll {
+  overflow-x: auto;
+}
+
+.table-scroll table {
+  min-width: 650px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-scroll th,
+.table-scroll td {
+  padding: 13px 12px;
+  text-align: left;
+  border-bottom: 1px solid #e8edf3;
+}
+
+.table-scroll th {
+  background: #f2f4f8;
+  font-weight: 700;
+}
+
+.table-scroll tbody tr:hover {
+  background: #fafbfe;
+}
+
+.table-scroll td:last-child {
+  font-weight: 700;
+  color: #14277e;
+}
+
+/* Responsive */
+@media (max-width: 1050px) {
+  .metric-grid,
+  .action-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-row {
+    flex-direction: column;
+  }
+
+  .search-row button {
+    min-height: 44px;
+  }
+
+  .score-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .panel-top {
+    flex-direction: column;
+  }
+
+  .level-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
